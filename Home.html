@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light" style="font-family: 'Sofia';font-size: 22px;">
+    <div class="container-fuild ">
+
+        <nav class="navbar navbar-expand-sm  navbar-dark bg-dark">
+            <a class="navbar-brand" href="HW2.html" style="color:blueviolet">Shahed portfolio</a>
+           
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+    
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                       <a class="nav-link " href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">   
+                       <a class="nav-link" href="contact.html">Contact Me</a>
+                    </li>  
+                      
+                </ul>
+               
+            </div>
+         </nav>
+    
+    </div>    
+<br><br>
+<div class="text-center p-5">
+<p style="font-size: x-large;">Choose what information about me you want to know </p> 
+    <br><br>
+<button onclick="pers()"> Personal Info. </button>
+<button onclick="tuit()"> Tuition Info. </button>
+<div class="p-5 ">
+<p id="personal" style="font-family:serif; color: blueviolet;" class="p-5">
+    My name is shahed Jaradat , I was born in Jordan date 18-2-2002</p>
+<p id="tuition" style="font-family:serif; color: blueviolet;" class="p-5">
+    I am studying Business Information Technology at University Of Jordan</p>
+</div>
+
+<script>
+    document.getElementById('personal').hidden = true
+   
+    function pers() 
+   {
+      document.getElementById('personal').hidden = false
+      document.getElementById('tuition').hidden = true
+   }
+   document.getElementById('tuition').hidden = true
+
+   function tuit() 
+   {
+      document.getElementById('tuition').hidden = false
+      document.getElementById('personal').hidden = true
+   }
+</script>
+
+</div>
+
+   
+
+<footer class="text-center justify-content-center align-items-center p-5" style="position: absolute;bottom: 0;left: 0;right:0; background-color: #414a4f;color: #fff;">
+    <p> Thank you for reading this , if you want to see some of my work please click on the button</p><br>
+   
+    <a href="caroasal.html" class="btn btn-outline-light" style="color: blueviolet;"><strong>MY WORK</strong></a>
+   
+ </footer> 
+</body>
+
+</html>
